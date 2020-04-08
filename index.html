@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vector tiles rendered in an offscreen canvas</title>
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+      .map {
+        background: rgba(255,255,255, 1);
+      }
+      .ol-rotate {
+        left: .5em;
+        bottom: .5em;
+        top: unset;
+        right: unset;
+      }    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

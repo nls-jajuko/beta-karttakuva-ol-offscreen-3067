@@ -1,0 +1,18 @@
+{
+  "name": "offscreen-canvas",
+  "dependencies": {
+    "json-stringify-safe": "^5.0.1",
+    "minimist": ">=0.2.1",
+    "ol": "6.3.1",
+    "ol-mapbox-style": "^6.1.1",
+    "proj4": "^2.6.1"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build --experimental-scope-hoisting --public-url . index.html"
+  }
+}
