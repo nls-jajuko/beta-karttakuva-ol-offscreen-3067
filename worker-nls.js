@@ -46,7 +46,7 @@ const sources = {
     projection: projection,
     tileGrid: tileGrid,
     minZoom: 1,
-    maxZoom: 14,
+    maxZoom: maxZoom,
     format: new MVT(),
     url: 'https://beta-karttakuva.maanmittauslaitos.fi/vt/backgroundmap/wmts/1.0.0/taustakartta/default/v20/ETRS-TM35FIN/{z}/{y}/{x}.pbf'
   })
@@ -99,7 +99,7 @@ function loadStyles() {
           tileGrid: tileGrid,
           projection: projection,
           minZoom: 1,
-          maxZoom: 14
+          maxZoom: maxZoom
         });
         layer.getRenderer().useContainer = function (target, transform) {
           this.containerReused = this.getLayer() !== layers[0];

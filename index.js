@@ -101,7 +101,9 @@ var map = new Map({
     projection: projection,
     resolutions: resolutions,
     center: center,
-    zoom: 10
+    zoom: 14,
+    maxZoom:15,
+    minZoom:1
   })
 });
 map.addControl(new FullScreen());
